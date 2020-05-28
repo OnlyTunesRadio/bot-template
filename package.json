@@ -1,0 +1,25 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "A discord bot made by CaldeiraG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CaldeiraG",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.1.0",
+    "npm-check-updates": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaldeiraG/SexEd_discordbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CaldeiraG/SexEd_discordbot/issues"
+  },
+  "homepage": "https://github.com/CaldeiraG/SexEd_discordbot#readme"
+}
