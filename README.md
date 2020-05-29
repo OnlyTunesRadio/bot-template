@@ -1,6 +1,6 @@
 # Sex Education Discord Bot
 
-**Sex Education Discord Bot is a bot made specifically for the r/NetflixSexEducation/ discord server ([link here](https://discord.gg/u2QtChz)) written with Javascript**
+Sex Education Discord Bot is a bot made specifically for the r/NetflixSexEducation/ discord server ([link here](https://discord.gg/u2QtChz)) written with Javascript
 
 # Features
 
