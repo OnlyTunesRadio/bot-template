@@ -1,8 +1,46 @@
 # Sex Education Discord Bot
 
-WIP
+**Sex Education Discord Bot is a bot made specifically for the r/NetflixSexEducation/ discord server ([link here](https://discord.gg/u2QtChz)) written with Javascript**
+
+# Features
+
+TBD
+
+# Setup
+
+1. Install [Git](https://git-scm.com/)
+2. Install [Node.js](https://nodejs.org/)
+3. Create a [Discord Application](https://discord.com/developers/applications) and get the bot token from there
+4. Invite the bot using the link available in the OAuth2 page
+5. Clone the repo using `git clone`
+6. On the folder of the repo, use `npm install` to transfer the necessary packages.
+7. Create a `.env` file with two parameters: 
+
+    `DISCORD_TOKEN=` -  this is where you put your bot token obtained on 3.
+    
+    `PREFIX=` - a prefix like `!`
+8. Run the bot using `node index.js` or just `node .` 
+
+    You should see a `Ready!` message when the bot is ready to accept commands. You can try using `ping` for that.
+
+9. You're done!
+
+# Built With:
+
+- [Discord.js](https://discord.js.org/) - The Discord Library
+- [Node.js](https://nodejs.org/) - JavaScript Runtime
+
+# Contribute
+
+Do you have any good idea? Do you wanna contribute in building new features? Look into the [Issues](https://github.com/CaldeiraG/SexEd_discordbot/issues) panel and check  our current stuff. Everyone is welcome to participate on the project.
+
+# Authors
+
+- CaldeiraG 
+- macgoldenof
 
 ----
+# License
 
 MIT License
 
