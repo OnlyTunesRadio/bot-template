@@ -1,4 +1,4 @@
-#Discord Bot
+# Discord Bot
 
 Discord Bot is a bot made for *something* written with Javascript
 
