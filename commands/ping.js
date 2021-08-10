@@ -1,7 +1,16 @@
+const { Message, Client } = require("discord.js");
+
 module.exports = {
-	name: 'ping',
-	description: 'Ping!',
-	execute(message, args) {
-		message.channel.send('Pong.' + Math.round(client.ws.ping) + ' ms');
-	},
+    name: "ping",
+    descripton: "Gives you the current latency of the bot!",
+    
+    /**
+     *
+     * @param {Client} client
+     * @param {Message} message
+     * @param {String[]} args
+     */
+    run: async (client, message, args) => {
+        message.channel.send(`${client.ws.ping} ws ping`);
+    },
 };
