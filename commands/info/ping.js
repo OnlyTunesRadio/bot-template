@@ -2,8 +2,7 @@ const { Message, Client } = require("discord.js");
 
 module.exports = {
     name: "ping",
-    descripton: "Gives you the current latency of the bot!",
-    
+    aliases: ['p'],
     /**
      *
      * @param {Client} client

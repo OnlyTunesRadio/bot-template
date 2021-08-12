@@ -1,32 +1,20 @@
-const fs = require('fs');
-const { Client, Collection, Intents } = require('discord.js');
+const { Client, Collection } = require("discord.js");
 require('dotenv').config();
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({
+    intents: 32767,
+});
+module.exports = client;
+
+// Global Variables
 client.commands = new Collection();
+client.slashCommands = new Collection();
+client.aliases = new Collection();
+//client.config = require("./config.json");
+client.token = process.env.DISCORD_TOKEN;
+client.prefix = process.env.PREFIX;
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+// Initializing the project
+require("./handler")(client);
 
-for (const file of commandFiles) {
-	const command = require(`./commands/${file}`);
-	client.commands.set(command.name, command);
-}
-
-client.once('ready', () => {
-	console.log('Ready!');
-});
-
-client.on('interactionCreate', async interaction => {
-	if (!interaction.isCommand()) return;
-
-	if (!client.commands.has(interaction.commandName)) return;
-
-	try {
-		await client.commands.get(interaction.commandName).execute(interaction);
-	} catch (error) {
-		console.error(error);
-		return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-	}
-});
-
-client.login(process.env.DISCORD_TOKEN);
+client.login(client.token);
