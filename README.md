@@ -1,5 +1,7 @@
 # Discord Bot
 
+[![wakatime](https://wakatime.com/badge/github/CaldeiraG/discordbot.svg)](https://wakatime.com/badge/github/CaldeiraG/discordbot)[![DeepSource](https://deepsource.io/gh/CaldeiraG/discordbot.svg/?label=active+issues&show_trend=true&token=qQBOJcoAceQg3Vl9nKpleTkv)](https://deepsource.io/gh/CaldeiraG/discordbot/?ref=repository-badge)
+
 Discord Bot is a bot made for *something* written with Javascript
 
 # Features
