@@ -10,7 +10,7 @@ module.exports = {
      */
     run: async (client, interaction) => {
 
-        const inviteURL = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`
+        const inviteURL = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=${process.env.PERMISSIONS}&scope=bot%20applications.commands`
 
         const row = new MessageActionRow()
             .addComponents(
@@ -21,7 +21,7 @@ module.exports = {
             );
 
         const embed = new MessageEmbed()
-            .setColor('#ED811C')
+            .setColor('GREEN')
             .setTitle('Invite the bot')
             .setURL(inviteURL)
             .setDescription('Use the button below to add the bot!')

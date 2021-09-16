@@ -1,19 +1,35 @@
 {
-    "name": "djs",
-    "version": "1.0.0",
-    "description": "",
+    "name": "simple-bot-template",
+    "version": "1.1.0",
+    "description": "A simple DJS bot template",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "test": "nodemon index.js"
+        "start": "node shard.js",
+        "test": "nodemon shard.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/OnlyTunes/Radio-Bot.git"
+    },
+    "keywords": [
+        "discord",
+        "discordbot",
+        "botTemplate",
+        "simplebot"
+    ],
+    "author": "CaldeiraG",
+    "bugs": {
+        "url": "https://github.com/CaldeiraG/discordbot/issues"
+    },
+    "homepage": "https://github.com/CaldeiraG/discordbot#readme",
+    "license": "MIT",
     "dependencies": {
         "discord.js": "^13.0.0",
         "dotenv": "^10.0.0",
+        "figlet": "^1.5.2",
         "glob": "^7.1.7",
-        "mongoose": "^6.0.6"
+        "mongoose": "^6.0.6",
+        "nodemon": "^2.0.12",
+        "pretty-ms": "^7.0.1"
     }
 }
