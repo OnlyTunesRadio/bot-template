@@ -28,7 +28,7 @@
         "dotenv": "^10.0.0",
         "figlet": "^1.5.2",
         "glob": "^7.1.7",
-        "mongoose": "^6.0.6",
+        "mongoose": "^6.0.8",
         "nodemon": "^2.0.12",
         "pretty-ms": "^7.0.1"
     }
