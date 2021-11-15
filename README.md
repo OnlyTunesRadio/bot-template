@@ -53,21 +53,23 @@ Discord Bot is a bot made for *something* written with Javascript
 
 - [Discord.js](https://discord.js.org/) - The Discord Library
 - [Node.js](https://nodejs.org/) - JavaScript Runtime
+- [Docker](https://www.docker.com/) - Used to host the final bot easily and containerized
 
 # Contribute
 
-Do you have any good idea? Do you wanna contribute in building new features? Look into the [Issues](https://github.com/CaldeiraG/SexEd_discordbot/issues) panel and check  our current stuff. Everyone is welcome to participate on the project.
+Do you have any good idea? Do you wanna contribute in building new features? Look into the [Issues](https://github.com/COnlyTunesRadio/bot-template/issues) panel and check  our current stuff. Everyone is welcome to participate on the project.
 
 # Authors
 
-- CaldeiraG 
+- CaldeiraG
+- Brayd ( OnlyTunes )
 
 ----
 # License
 
 MIT License
 
-Copyright (c) 2020 CaldeiraG
+Copyright (c) 2021 OnlyTunesRadio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
