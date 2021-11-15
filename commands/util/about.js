@@ -9,23 +9,10 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message) => {
-        process.on('uncaughtException', (error, origin) => {
-            console.log('----- Uncaught exception -----')
-            console.log(error)
-            console.log('----- Exception origin -----')
-            console.log(origin)
-        })
-        
-        process.on('unhandledRejection', (reason, promise) => {
-            console.log('----- Unhandled Rejection at -----')
-            console.log(promise)
-            console.log('----- Reason -----')
-            console.log(reason)
-        })
 
         const GITHUB01 = `https://github.com/CaldeiraG`
         const GITHUB02 = `https://github.com/OnlyTunes`
-        const REPOURL = `https://github.com/CaldeiraG/discordbot`
+        const REPOURL = `https://github.com/OnlyTunesRadio/bot-template`
 
         const row = new MessageActionRow()
             .addComponents(
