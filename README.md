@@ -1,12 +1,34 @@
 # Discord Bot
 
-[![wakatime](https://wakatime.com/badge/github/CaldeiraG/discordbot.svg)](https://wakatime.com/badge/github/CaldeiraG/discordbot) [![DeepSource](https://deepsource.io/gh/CaldeiraG/discordbot.svg/?label=active+issues&show_trend=true&token=qQBOJcoAceQg3Vl9nKpleTkv)](https://deepsource.io/gh/CaldeiraG/discordbot/?ref=repository-badge)
+[Repo Size](https://img.shields.io/github/repo-size/OnlyTunesRadio/bot-template) [Contributor Count](https://img.shields.io/github/contributors/OnlyTunesRadio/bot-template)
 
 Discord Bot is a bot made for *something* written with Javascript
 
 # Features
+- MongoDB support
+- Slash command support
+- Auto welcome message on guild join
+- Pre coded commands to make development faster
+- Pre sharded bot ( for accurate user count and ease of guild growth )
 
-TBD
+
+
+# Included Commands
+
+- Info
+```
+- Dynamic Help command!
+- Info command for bot stats
+- Ping command for Message and Websocket latency
+```
+
+- Util
+```
+- About command for explaining the bot ( setup with a draft of the template )
+- Dynamic invite command which genorates based on the bot ID and required permissions ( set in ENV )
+- License command for explaining the lisence terms
+```
+
 
 # Setup
 
@@ -21,7 +43,7 @@ TBD
     `DISCORD_TOKEN=` -  this is where you put your bot token obtained on 3.
     
     `PREFIX=` - a prefix like `!`
-8. Run the bot using `node index.js` or just `node .` 
+8. Run the bot using `node shard.js` or just `node .` 
 
     You should see a `Ready!` message when the bot is ready to accept commands. You can try using `ping` for that.
 
