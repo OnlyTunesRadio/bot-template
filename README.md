@@ -30,7 +30,7 @@ Discord Bot is a bot made for *something* written with Javascript
 ```
 
 
-# Setup
+# Quick start guide
 
 1. Install [Git](https://git-scm.com/)
 2. Install [Node.js](https://nodejs.org/)
@@ -38,12 +38,19 @@ Discord Bot is a bot made for *something* written with Javascript
 4. Invite the bot using the link available in the OAuth2 page
 5. Clone the repo using `git clone`
 6. On the folder of the repo, use `npm install` to transfer the necessary packages.
-7. Create a `.env` file with two parameters: 
+7. Create a `.env` file with the following: 
 
     `DISCORD_TOKEN=` -  this is where you put your bot token obtained on 3.
     
     `PREFIX=` - a prefix like `!`
-8. Run the bot using `node shard.js` or just `node .` 
+
+    `PERMISSIONS` - a permission integer from your [developer](https://discord.com/developers/applications) page for the bot
+
+    `EXPERIMENTAL` - this must be either `yes` or `no` 
+
+    `MONGOOSESTRING` - this can be left blank if mongoDB is not going to be used
+
+8. Run the bot using `node shard.js` or `npm run start` ( If you want it to restart when you make a change use `npm run test` )
 
     You should see a `Ready!` message when the bot is ready to accept commands. You can try using `ping` for that.
 
@@ -53,11 +60,15 @@ Discord Bot is a bot made for *something* written with Javascript
 
 - [Discord.js](https://discord.js.org/) - The Discord Library
 - [Node.js](https://nodejs.org/) - JavaScript Runtime
-- [Docker](https://www.docker.com/) - Used to host the final bot easily and containerized
+- [Docker](https://www.docker.com/) - Containerization Solution
 
 # Contribute
 
 Do you have any good idea? Do you wanna contribute in building new features? Look into the [Issues](https://github.com/COnlyTunesRadio/bot-template/issues) panel and check  our current stuff. Everyone is welcome to participate on the project.
+
+Or jump into our discord server! We would love to see your ideas and hear how you have used this template!
+[![Support Server](https://img.shields.io/discord/872219348624900096.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/WYCrkuHJ6X)
+
 
 # Authors
 
@@ -65,6 +76,8 @@ Do you have any good idea? Do you wanna contribute in building new features? Loo
 - Brayd ( OnlyTunes )
 
 ----
+
+
 # License
 
 MIT License

@@ -10,7 +10,7 @@ module.exports = {
      */
     run: async (client, message) => {
 
-        const LICENSEURL = `https://github.com/CaldeiraG/discordbot/blob/master/LICENSE`
+        const LICENSEURL = `https://github.com/OnlyTunesRadio/bot-template/blob/master/LICENSE`
         const REPOURL = `https://github.com/OnlyTunesRadio/bot-template`
 
         const row = new MessageActionRow()

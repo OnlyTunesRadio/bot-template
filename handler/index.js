@@ -49,4 +49,10 @@ module.exports = async (client) => {
         // Register for all the guilds the bot is in
         await client.application.commands.set(arrayOfSlashCommands);
     });
+
+    // mongoose
+	const mongooseConnectionString = process.env.MONGOOSESTRING
+	if (!mongooseConnectionString) return;
+	
+	mongoose.connect(mongooseConnectionString).then(() => console.log('Connected to mongodb'));
 };

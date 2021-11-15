@@ -1,6 +1,6 @@
 {
-    "name": "simple-bot-template",
-    "version": "1.1.0",
+    "name": "bot-template",
+    "version": "1.2.0",
     "description": "A simple DJS bot template",
     "main": "index.js",
     "scripts": {
@@ -15,15 +15,21 @@
         "discord",
         "discordbot",
         "botTemplate",
-        "simplebot"
+        "simplebot",
+        "v13",
+        "DJS",
+        "nodejs",
+        "node",
+        "discord.js"
     ],
-    "author": "CaldeiraG",
+    "author": "OnlyTunesRadio",
     "bugs": {
-        "url": "https://github.com/CaldeiraG/discordbot/issues"
+        "url": "https://github.com/OnlyTunesRadio/bot-template/issues"
     },
-    "homepage": "https://github.com/CaldeiraG/discordbot#readme",
+    "homepage": "https://github.com/OnlyTunesRadio/bot-template#readme",
     "license": "MIT",
     "dependencies": {
+        "chalk": "^4.1.2",
         "discord.js": "^13.3.1",
         "dotenv": "^10.0.0",
         "figlet": "^1.5.2",
