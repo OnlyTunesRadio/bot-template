@@ -1,6 +1,6 @@
 # Discord Bot
 
-[Repo Size](https://img.shields.io/github/repo-size/OnlyTunesRadio/bot-template) [Contributor Count](https://img.shields.io/github/contributors/OnlyTunesRadio/bot-template)
+![Repo Size](https://img.shields.io/github/repo-size/OnlyTunesRadio/bot-template) ![Contributor Count](https://img.shields.io/github/contributors/OnlyTunesRadio/bot-template)
 
 Discord Bot is a bot made for *something* written with Javascript
 
