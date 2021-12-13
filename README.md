@@ -1,6 +1,6 @@
 # Discord Bot
 
-![Repo Size](https://img.shields.io/github/repo-size/OnlyTunesRadio/bot-template) ![Contributor Count](https://img.shields.io/github/contributors/OnlyTunesRadio/bot-template) ![Docker Pulls](https://img.shields.io/docker/pulls/onlytunes/bot-template) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/onlytunes/bot-template/latest)
+![Repo Size](https://img.shields.io/github/repo-size/OnlyTunesRadio/bot-template) ![Contributor Count](https://img.shields.io/github/contributors/OnlyTunesRadio/bot-template) ![Docker Pulls](https://img.shields.io/docker/pulls/onlytunes/bot-template) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/onlytunes/bot-template/latest) [![CI to Docker Hub](https://github.com/OnlyTunesRadio/bot-template/actions/workflows/build.yml/badge.svg)](https://github.com/OnlyTunesRadio/bot-template/actions/workflows/build.yml)
 
 Discord Bot is a bot made for *something* written with Javascript
 
