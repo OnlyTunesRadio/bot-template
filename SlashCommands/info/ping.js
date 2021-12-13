@@ -8,9 +8,8 @@ module.exports = {
      *
      * @param {Client} client
      * @param {CommandInteraction} interaction
-     * @param {String[]} args
      */
-    run: async (client, interaction, args) => {
+    run: async (client, interaction) => {
 
         const WebSocketPing = client.ws.ping
         const MessagePing = Date.now() - interaction.createdTimestamp;
@@ -24,6 +23,6 @@ module.exports = {
              )
              .setTimestamp();
          
-            interaction.followUp({ embeds: [pingEmbed] });
+            await interaction.followUp({embeds: [pingEmbed]});
     },
 };

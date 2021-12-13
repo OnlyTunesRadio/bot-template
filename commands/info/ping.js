@@ -8,9 +8,8 @@ module.exports = {
      *
      * @param {Client} client
      * @param {Message} message
-     * @param {String[]} args
      */
-    run: async (client, message, args) => {
+    run: async (client, message) => {
 
         const WebSocketPing = client.ws.ping
         const MessagePing = Date.now() - message.createdTimestamp;

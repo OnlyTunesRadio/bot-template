@@ -1,0 +1,32 @@
+name: CI to Docker Hub
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+      - name: Setup Docker BuildX
+        id: buildx
+        uses: docker/buildx-action@v1
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: ./
+          file: ./dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/bot-template:latest
+
+      - name: Image Digest
+        run: echo ${{ steps.docker_build.outputs.digest }}

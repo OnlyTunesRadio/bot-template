@@ -1,4 +1,4 @@
-const { Message, Client, MessageEmbed, MessageActionRow, MessageButton, CommandInteraction } = require("discord.js");
+const { Client, MessageEmbed, MessageActionRow, MessageButton, CommandInteraction } = require("discord.js");
 
 module.exports = {
     name: "license",
@@ -6,9 +6,8 @@ module.exports = {
     /**
      * @param {Client} client
      * @param {CommandInteraction} interaction
-     * @param {String[]} args
      */
-    run: async (client,interaction, args) => {
+    run: async (client,interaction) => {
 
         const LICENSEURL = `https://github.com/OnlyTunesRadio/bot-template/blob/master/LICENSE`
         const REPOURL = `https://github.com/OnlyTunesRadio/bot-template`
@@ -29,7 +28,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setColor('GREEN')
             .setTitle('About Us')
-            .setDescription('This bot is licensed under the MIT License. This allows users to:\n- Use Commercially\n- Freely Modify\n- Freely Distrabute\n- Use privatly\n For more info use the buttons below to read it in its full extent!')
+            .setDescription('This bot is licensed under the MIT License. This allows users to:\n- Use Commercially\n- Freely Modify\n- Freely Distribute\n- Use privately\n For more info use the buttons below to read it in its full extent!')
             .setFooter(
                 `Requested by ${interaction.user.tag}`,
                 interaction.user.displayAvatarURL({

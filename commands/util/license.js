@@ -1,4 +1,4 @@
-const { Message, Client, MessageEmbed, MessageActionRow, MessageButton, Interaction } = require("discord.js");
+const { Message, Client, MessageEmbed, MessageActionRow, MessageButton} = require("discord.js");
 
 module.exports = {
     name: "license",
@@ -6,7 +6,6 @@ module.exports = {
     /**
      * @param {Client} client
      * @param {Message} message
-     * @param {String[]} args
      */
     run: async (client, message) => {
 
@@ -29,7 +28,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setColor('GREEN')
             .setTitle('About Us')
-            .setDescription('This bot is licensed under the MIT License. This allows users to:\n- Use Commercially\n- Freely Modify\n- Freely Distrabute\n- Use privatly\n For more info use the buttons below to read it in its full extent!')
+            .setDescription('This bot is licensed under the MIT License. This allows users to:\n- Use Commercially\n- Freely Modify\n- Freely Distribute\n- Use privately\n For more info use the buttons below to read it in its full extent!')
             .setFooter(
                 `Requested by ${message.author.tag}`,
                 message.author.displayAvatarURL({

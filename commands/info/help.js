@@ -4,8 +4,7 @@ const {
     Message, 
     MessageEmbed, 
     MessageActionRow, 
-    MessageSelectMenu, 
-    Interaction
+    MessageSelectMenu
 } = require("discord.js");
 
 const PREFIX = process.env.PREFIX;
@@ -16,7 +15,6 @@ module.exports = {
     /**
      * @param {Client} client
      * @param {Message} message
-     * @param {String[]} args
      */
     run: async (client, message) => {
 

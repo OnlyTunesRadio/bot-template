@@ -1,4 +1,4 @@
-const { CommandInteraction, Client, MessageEmbed, MessageActionRow, MessageButton, Interaction } = require("discord.js");
+const { CommandInteraction, Client, MessageEmbed, MessageActionRow, MessageButton} = require("discord.js");
 
 module.exports = {
     name: "invite",
@@ -6,7 +6,6 @@ module.exports = {
     /**
      * @param {Client} client
      * @param {CommandInteraction} interaction
-     * @param {String[]} args
      */
     run: async (client, interaction) => {
 

@@ -1,4 +1,4 @@
-const { Message, Client, MessageEmbed, MessageActionRow, MessageButton, CommandInteraction } = require("discord.js");
+const { Client, MessageEmbed, MessageActionRow, MessageButton, CommandInteraction } = require("discord.js");
 
 module.exports = {
     name: "about",
@@ -6,9 +6,8 @@ module.exports = {
     /**
      * @param {Client} client
      * @param {CommandInteraction} interaction
-     * @param {String[]} args
      */
-    run: async (client,interaction, args) => {
+    run: async (client,interaction) => {
 
         const GITHUB01 = `https://github.com/CaldeiraG`
         const GITHUB02 = `https://github.com/OnlyTunes`

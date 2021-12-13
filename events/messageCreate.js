@@ -16,5 +16,5 @@ client.on("messageCreate", async (message) => {
     const command = client.commands.get(cmd.toLowerCase()) || client.commands.get(client.aliases.get(cmd.toLowerCase()));
 
     if (!command) return;
-    await command.run(client, message, args);
+    await command.run(client, message);
 });

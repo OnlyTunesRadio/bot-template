@@ -10,7 +10,6 @@ module.exports = {
     /**
      * @param {Client} client
      * @param {Message} message
-     * @param {String[]} args
      */
     run: async (client, message) => {
 
@@ -24,11 +23,11 @@ module.exports = {
 
         const WebSocketPing = client.ws.ping;
         const MessagePing = Date.now() - message.createdTimestamp;
-        const BOTuptime = prettyMilliseconds(client.uptime);
+        const BOTUptime = prettyMilliseconds(client.uptime);
 
         const promises = [
-            client.shard.fetchClientValues('guilds.cache.size'),
-            client.shard.broadcastEval(c => c.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)),
+            await client.shard.fetchClientValues('guilds.cache.size'),
+            await client.shard.broadcastEval(c => c.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)),
         ];
 
         return Promise.all(promises)
@@ -46,7 +45,7 @@ module.exports = {
                     { name: 'Mode: ', value: `\`\`\`\n${mode}\n\`\`\``, inline: true },
                     { name: 'WebSocket: ', value: `\`\`\`\n${WebSocketPing <= 200 ? "🟢" : WebSocketPing <= 400 ? "🟡" : "🔴"} ${WebSocketPing}ms\n\`\`\``, inline: true },
                     { name: 'ping: ', value: `\`\`\`\n${MessagePing <= 200 ? "🟢" : MessagePing <= 400 ? "🟡" : "🔴"} ${MessagePing}ms\n\`\`\``, inline: true },
-                    { name: 'Uptime: ', value: `\`\`\`\n${BOTuptime}\n\`\`\``, inline: true },
+                    { name: 'Uptime: ', value: `\`\`\`\n${BOTUptime}\n\`\`\``, inline: true },
                 )
                 .setTimestamp()
                 .setFooter(

@@ -1,6 +1,6 @@
 # Discord Bot
 
-![Repo Size](https://img.shields.io/github/repo-size/OnlyTunesRadio/bot-template) ![Contributor Count](https://img.shields.io/github/contributors/OnlyTunesRadio/bot-template)
+![Repo Size](https://img.shields.io/github/repo-size/OnlyTunesRadio/bot-template) ![Contributor Count](https://img.shields.io/github/contributors/OnlyTunesRadio/bot-template) ![Docker Pulls](https://img.shields.io/docker/pulls/onlytunes/bot-template) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/onlytunes/bot-template/latest)
 
 Discord Bot is a bot made for *something* written with Javascript
 
@@ -10,6 +10,7 @@ Discord Bot is a bot made for *something* written with Javascript
 - Auto welcome message on guild join
 - Pre coded commands to make development faster
 - Pre sharded bot ( for accurate user count and ease of guild growth )
+- DockerFile for even quicker docker support our of the box
 
 
 
@@ -28,6 +29,10 @@ Discord Bot is a bot made for *something* written with Javascript
 - Dynamic invite command which genorates based on the bot ID and required permissions ( set in ENV )
 - License command for explaining the lisence terms
 ```
+
+# Want to test the prebuilt commands?
+ You can do that by using our prebuilt docker image!
+ [![dockeri.co](https://dockeri.co/image/onlytunes/bot-template)](https://hub.docker.com/r/onlytunes/bot-template)
 
 
 # Quick start guide
