@@ -48,12 +48,7 @@ module.exports = {
                     { name: 'Uptime: ', value: `\`\`\`\n${BOTUptime}\n\`\`\``, inline: true },
                 )
                 .setTimestamp()
-                .setFooter(
-                    `Requested by ${interaction.user.tag}`,
-                    interaction.user.displayAvatarURL({
-                        dynamic: true,
-                    })
-                );
+                .setAuthor({ name: interaction.user.username, iconURL: interaction.user.avatarURL() });
 
             interaction.followUp({ embeds: [InfoEmbed] });
     })

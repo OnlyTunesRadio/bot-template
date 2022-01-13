@@ -24,12 +24,7 @@ module.exports = {
             .setTitle('Invite Me')
             .setURL(inviteURL)
             .setDescription('Use the button provided below to add the bot to your server!')
-            .setFooter(
-                `Requested by ${message.author.tag}`,
-                message.author.displayAvatarURL({
-                    dynamic: true,
-                })
-            );
+            .setAuthor({ name: message.author.username, iconURL: message.author.avatarURL() });
 
         await message.channel.send({ ephemeral: true, embeds: [embed], components: [row] });
             

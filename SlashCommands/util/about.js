@@ -34,12 +34,7 @@ module.exports = {
             .setColor('GREEN')
             .setTitle('About Us')
             .setDescription('This bot is using a template made by CaldeiraG and Brayd ( OnlyTunes ) If you like using the template or like this bot feel free to check us out by using the buttons below!')
-            .setFooter(
-                `Requested by ${interaction.user.tag}`,
-                interaction.user.displayAvatarURL({
-                    dynamic: true,
-                })
-            );
+            .setAuthor({ name: interaction.user.username, iconURL: interaction.user.avatarURL() });
 
         await interaction.followUp({ ephemeral: true, embeds: [embed], components: [row] });
             

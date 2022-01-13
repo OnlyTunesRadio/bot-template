@@ -34,12 +34,7 @@ module.exports = {
             .setColor('GREEN')
             .setTitle('About Us')
             .setDescription('This bot is using a template made by CaldeiraG and Brayd ( OnlyTunes ) If you like using the template or like this bot feel free to check us out by using the buttons below!')
-            .setFooter(
-                `Requested by ${message.author.tag}`,
-                message.author.displayAvatarURL({
-                    dynamic: true,
-                })
-            );
+            .setAuthor({ name: message.author.username, iconURL: message.author.avatarURL() });
 
         await message.channel.send({ ephemeral: true, embeds: [embed], components: [row] });
             

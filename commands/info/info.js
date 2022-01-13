@@ -48,12 +48,7 @@ module.exports = {
                     { name: 'Uptime: ', value: `\`\`\`\n${BOTUptime}\n\`\`\``, inline: true },
                 )
                 .setTimestamp()
-                .setFooter(
-                    `Requested by ${message.author.tag}`,
-                    message.author.displayAvatarURL({
-                        dynamic: true,
-                    })
-                );
+                .setAuthor({ name: message.author.username, iconURL: message.author.avatarURL() });
 
             message.channel.send({ embeds: [InfoEmbed] });
     })

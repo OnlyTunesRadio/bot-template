@@ -24,12 +24,7 @@ module.exports = {
             .setTitle('Invite the bot')
             .setURL(inviteURL)
             .setDescription('Use the button below to add the bot!')
-            .setFooter(
-                `Requested by ${interaction.user.tag}`,
-                interaction.user.displayAvatarURL({
-                    dynamic: true,
-                })
-            );
+            .setAuthor({ name: interaction.user.username, iconURL: interaction.user.avatarURL() });
 
         await interaction.followUp({ ephemeral: true, embeds: [embed], components: [row] });
     }

@@ -29,12 +29,7 @@ module.exports = {
             .setColor('GREEN')
             .setTitle('About Us')
             .setDescription('This bot is licensed under the MIT License. This allows users to:\n- Use Commercially\n- Freely Modify\n- Freely Distribute\n- Use privately\n For more info use the buttons below to read it in its full extent!')
-            .setFooter(
-                `Requested by ${interaction.user.tag}`,
-                interaction.user.displayAvatarURL({
-                    dynamic: true,
-                })
-            );
+            .setAuthor({ name: interaction.user.username, iconURL: interaction.user.avatarURL() });
 
         await interaction.followUp({ ephemeral: true, embeds: [embed], components: [row] });
             
