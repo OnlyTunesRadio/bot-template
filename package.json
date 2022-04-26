@@ -2,7 +2,7 @@
     "name": "bot-template",
     "version": "1.4.0",
     "description": "A simple DJS bot template",
-    "main": "index.js",
+    "main": "shard.js",
     "scripts": {
         "start": "node shard.js",
         "test": "nodemon shard.js"
